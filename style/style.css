@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto:wght@100;300;900&display=swap');
+@import url('box-sizing.css');
+@import url('resetRems.css');
+
+:root{
+  --fw-100: 100;
+  --fw-300: 300;
+  --fw-900: 900;
+  --fuentePrincipal: 'Roboto', sans-serif;
+  --fuenteSecundaria: 'Raleway', sans-serif;
+  --colorPrimario: #460c1a;
+
+  --subTitle: 3.5rem;
+}
+
+/* heading */
+.heading{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo{
+  font-family: var(--fuenteSecundaria);
+  font-size: 3rem;
+}
+
+.menu{
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.menu a {
+  color: #000;
+  font-family: var(--fuentePrincipal);
+  font-weight: var(--fw-300);
+}
+
+/* hero */
+
+.hero{
+  background:linear-gradient( rgba(122, 17, 17, 0.432) 100%, rgba(0, 0, 0, 0.5)100%),url("../img/estudiante-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.contenedor-hero{
+  max-width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.contenedor-hero h1{
+  font-family: var(--fuenteSecundaria);
+  font-size: 5rem;
+  padding-top: 3rem;
+}
+
+.contenedor-hero p{
+  font-size: 1.5rem;
+}
+
+/* servicios */
+
+.servicios{
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  color: var(--colorPrimario);
+  font-family: var(--fuentePrincipal);
+}
+
+.servicios h2{
+  margin: 1rem 0;
+  font-size: var(--subTitle);
+  font-weight: 900;
+}
+
+.servicios h3{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.servicios p{
+  font-size: 1rem;
+}
+
+.contenedor-servicios{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.colum-6{
+  width: 49%;
+  height: 30rem;
+  margin: .1rem;
+}
+
+.colum-6{
+  width: 33.33%;
+}
+
+/* imagenes */
+.colum-6:nth-child(1){
+  background: url('../img/ingles.jpg');
+  background-position: center;
+  background-size: 99%;
+
+  background-repeat: no-repeat;
+}
+
+.colum-6:nth-child(4){
+  background: url('../img/computacion.jpg');
+  background-position: center;
+  background-size: 99%;
+
+  background-repeat: no-repeat;
+}
+
+.colum-6:nth-child(5){
+  background: url('../img/ceneval.png');
+  background-position: center;
+  background-size: 80%;
+
+  background-repeat: no-repeat;
+}
+
+.colum-6:nth-child(8){
+  background: url('../img/inea-en-linea.jpg');
+  background-position: center;
+  background-size: 99%;
+  background-repeat: no-repeat;
+}
+
+/* texto */
+.colum-6:nth-child(2){
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.colum-6:nth-child(3){
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.colum-6:nth-child(3){
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.colum-6:nth-child(6){
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.colum-6:nth-child(7){
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.year-service{
+  font-size: 3.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.year-service h2{
+  font-size: var(--subTitle);
+  font-weight: 900;
+  color: var(--colorPrimario);
+}
+
+.year-service span{
+  font-size: 600;
+}
+
+/* nosotros */
+
+.nosotros{
+  background-color: var(--colorPrimario);
+  color: #fff;
+  text-align: center;
+}
+
+.nosotros h2{
+  padding-bottom: 4rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.items-nosotros{
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contenido-nosotros{
+  padding: 4rem 0;
+}
+
+.contenido-nosotros i{
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contenido-nosotros h3{
+  font-family: var(--fuentePrincipal);
+  font-weight: var(--fw-100);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.item-nosotros{
+  margin-right: 2rem;
+  border: solid 1px rgb(255, 255, 255);
+  padding: 2rem 1rem;
+}
+
+/* nav */
+.nav-bg{
+  background-color: rgb(14, 12, 12);
+  color: #fff;
+}
+
+.nav-menu{
+  width: 70%;
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu .menu a{
+  color: #fff;
+}
+
+/* Politicas */
+.container-content{
+  text-align: center;
+}
+
+.container-content h1{
+  margin-bottom: 3rem;
+}
+
+.politics{
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.politics-content{
+  margin: 3rem 0;
+}
+
+.politics-content h2{
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.politics-content p{
+  font-size: 1.8rem;
+}
+
+.bg-content{
+  background:linear-gradient( rgba(122, 17, 17, 0.432) 100%, rgba(0, 0, 0, 0.5)100%),url("../img/compromiso.jpeg");
+  background-size: cover;
+  background-position: center;
+  height:70vh;
+}
+
+.bg-content-preguntas{
+  background:linear-gradient( rgba(122, 17, 17, 0.432) 100%, rgba(0, 0, 0, 0.5)100%),url("../img/preguntas.jpg");
+  background-size: cover;
+  background-position: center;
+  height:70vh;
+}
+
+.bg-content-ubicacion{
+  background:linear-gradient( rgba(122, 17, 17, 0.432) 100%, rgba(0, 0, 0, 0.5)100%),url("../img/ubicacion.jpg");
+  background-size: cover;
+  background-position: center;
+  height:70vh;
+}
+
+.bg-content-email{
+  background:linear-gradient( rgba(46, 46, 46, 0.432) 100%, rgba(0, 0, 0, 0.5)100%),url("../img/email.jpg");
+  background-size: cover;
+  background-position: center;
+  height:70vh;
+}
+
+/* about me */
+
+.about-me-content{
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-me{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.content-me{
+  margin-right: 2rem;
+}
+
+.about-me img{
+  max-width: 100%;
+  width: 50rem;
+}
+
+.mapa{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.contenedor-email{
+  max-width: 70%;
+  margin: 3rem auto;
+}
+
+.logo a {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-menu a{
+  color: #fff;
+  text-decoration: none; 
+}
